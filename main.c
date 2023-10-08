@@ -5,7 +5,7 @@ int main(int argc, char *argv[]){
     int res1, res2, res3, res4, res5;
 
     printf("input two integers : ");
-    scanf("%d %d", &a, &b);
+    scanf("%i %i", &a, &b);
 
     res1 = a + b;
     printf("+ result is %d \n", res1);
