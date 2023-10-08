@@ -1,26 +1,14 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
-    int a, b;
-    int res1, res2, res3, res4, res5;
+    int sec, min, sec2;
 
-    printf("input two integers : ");
-    scanf("%i %i", &a, &b);
+    printf("input the second : ");
+    scanf("%i", &sec);
 
-    res1 = a + b;
-    printf("+ result is %d \n", res1);
+    min = sec / 60;
+    sec2 = sec % 60;
 
-    res2 = a - b;
-    printf("- result is %d \n", res2);
-    
-    res3 = a * b;
-    printf("* result is %d \n", res3);
-    
-    res4 = a / b;
-    printf("/ result is %d \n", res4);
-    
-    res5 = a % b;
-    printf("%% result is %d \n", res5);
-    
+    printf("the time is %d : %d", min, sec2);
     return 0;
 }
